@@ -1,0 +1,9 @@
+--- 
+result: failed
+numTestPasses: "1"
+numTestFailures: "1"
+numCommandFailures: "1"
+numCommandPasses: "2"
+resultDir: 
+numCommandErrors: "0"
+totalTime: "2"

@@ -1,0 +1,33 @@
+<p>
+  <b>Id:</b>
+  <%=h @activity.id %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @activity.priority %>
+</p>
+
+<p>
+  <b>Deadline:</b>
+  <%=h @activity.deadline %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @activity.description %>
+</p>
+
+<p>
+  <b>Estimated pomodoros:</b>
+  <%=h @activity.estimated_pomodoros %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @activity.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

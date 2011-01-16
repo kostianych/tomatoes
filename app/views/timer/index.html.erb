@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <title>Javascript Countdown Timer</title>
+
+  <link rel="stylesheet" href="stylesheets/timer.css">
+  <style type="text/css">
+    html {
+      background:#222;
+      height:100%;
+    }
+    body {
+      font:normal 76% verdana,tahoma,arial;color:#fff;
+    }
+    a {
+      color:#99ffff;
+    }
+    a:hover {
+      color:#ffff00;
+    }
+    h1, h2 {
+      font:normal 1em georgia,helvetica,arial;
+      letter-spacing:-0.5px; /* it isn't web 2.0 otherwise, right? ;) */
+    }
+    p {
+      margin:0.5em 0px 1.25em 0px;
+      padding:0px;
+      line-height:1.7em;
+    }
+  </style>
+</head>
+
+<body>
+ <%= javascript_include_tag "prototype" %>
+ <div id="counter" class="counter">
+	<ul class="countdown">
+		<li><div class="countdown_num" id="countdown_min"></div><div>Minutes</div></li>
+		<li><div class="countdown_num" id="countdown_sec"></div><div>Seconds</div></li>
+	</ul>
+</div>
+<div id="expired" style="display:none;">
+	The deadline has passed.
+</div>
+<button id="call" width=100 height=20 
+  onclick="<%= remote_function(:update => 'call', :url => {:action => 'save'}) %>" >
+  call
+</button>
+<%= javascript_tag remote_function(:url => {:action => 'save'}) %>
+ 
+<%= javascript_include_tag "timer" %>
+</body>

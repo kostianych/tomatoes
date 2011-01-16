@@ -1,0 +1,14 @@
+1.8.7
+
+C:\Documents and Settings\Chyzhykau_K.IBA>gem update rails
+Updating installed gems
+Updating rails
+Successfully installed activesupport-2.3.5
+Successfully installed activerecord-2.3.5
+Successfully installed rack-1.0.1
+Successfully installed actionpack-2.3.5
+Successfully installed actionmailer-2.3.5
+Successfully installed activeresource-2.3.5
+Successfully installed rails-2.3.5
+Gems updated: activesupport, activerecord, rack, actionpack, actionmailer, activeresource, r
+ails

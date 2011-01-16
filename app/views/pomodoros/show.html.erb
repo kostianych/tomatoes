@@ -1,0 +1,28 @@
+<p>
+  <b>Id:</b>
+  <%=h @pomodoro.id %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%=h @pomodoro.activity_id %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%=h @pomodoro.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%=h @pomodoro.end_time %>
+</p>
+
+<p>
+  <b>Interruption type:</b>
+  <%=h @pomodoro.interruption_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_pomodoro_path(@pomodoro) %> |
+<%= link_to 'Back', pomodoros_path %>

@@ -1,0 +1,9 @@
+--- 
+result: failed
+numTestPasses: "0"
+numTestFailures: "1"
+numCommandFailures: "3"
+numCommandPasses: "8"
+resultDir: c:\result/firefox(13)
+numCommandErrors: "0"
+totalTime: "1"

@@ -1,0 +1,13 @@
+<p>
+  <b>Today:</b>
+  <%=h @today_activity.today %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%=h @today_activity.activity_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_today_activity_path(@today_activity) %> |
+<%= link_to 'Back', today_activities_path %>

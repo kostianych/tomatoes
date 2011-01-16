@@ -1,0 +1,20 @@
+<h1>Editing today_activity</h1>
+
+<% form_for(@today_activity) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :today %><br />
+    <%= f.date_select :today %>
+  </p>
+  <p>
+    <%= f.label :activity_id %><br />
+    <%= f.text_field :activity_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @today_activity %> |
+<%= link_to 'Back', today_activities_path %>

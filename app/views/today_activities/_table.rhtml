@@ -1,0 +1,27 @@
+<table id="table">
+  <tr>
+    <th>Id</th>
+    <th>Priority</th>
+    <th>Deadline</th>
+    <th>Description</th>
+    <th>Pomodoros</th>
+    <th>Comment</th>
+  </tr>
+  
+<% @today_activities.each do |today_activity| %>
+  <tr>
+    <td><%=h today_activity.activity_id %></td>
+    <td><%=h today_activity.activity.priority %></td>
+    <td><%=h today_activity.activity.deadline %></td>
+    <td><%=h today_activity.activity.description %></td>
+    <td><%=h today_activity.activity.estimated_pomodoros %></td>
+    <td><%=h today_activity.activity.comment %></td>
+    <td><%= link_to 'Show', today_activity %></td>
+    <td><%= link_to 'Edit', edit_today_activity_path(today_activity) %></td>
+    <td><%= link_to 'Destroy', today_activity, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+
+</table>
+
+

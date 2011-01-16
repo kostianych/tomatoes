@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  activity_id: 1
+  start_time: 2009-01-29 13:50:39
+  end_time: 2009-12-03 14:25:39
+  interruption_type: 1
+
+two:
+  id: 2
+  activity_id: 2
+  start_time: 2008-01-01 12:00:01
+  end_time: 2008-02-03 13:50:39
+  interruption_type: 2

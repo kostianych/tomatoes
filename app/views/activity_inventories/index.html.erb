@@ -1,0 +1,22 @@
+<h1>Listing activity_inventories</h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Priority</th>
+  </tr>
+
+<% for activity_inventory in @activity_inventories %>
+  <tr>
+    <td><%=h activity_inventory.activity_id %></td>
+    <td><%=h activity_inventory.priority %></td>
+    <td><%= link_to 'Show', activity_inventory %></td>
+    <td><%= link_to 'Edit', edit_activity_inventory_path(activity_inventory) %></td>
+    <td><%= link_to 'Destroy', activity_inventory, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New activity_inventory', new_activity_inventory_path %>

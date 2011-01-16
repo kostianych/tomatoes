@@ -1,0 +1,28 @@
+<h1>Listing pomodoros</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Activity</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Interruption type</th>
+  </tr>
+
+<% @pomodoros.each do |pomodoro| %>
+  <tr>
+    <td><%=h pomodoro.id %></td>
+    <td><%=h pomodoro.activity_id %></td>
+    <td><%=h pomodoro.start_time %></td>
+    <td><%=h pomodoro.end_time %></td>
+    <td><%=h pomodoro.interruption_type %></td>
+    <td><%= link_to 'Show', pomodoro %></td>
+    <td><%= link_to 'Edit', edit_pomodoro_path(pomodoro) %></td>
+    <td><%= link_to 'Destroy', pomodoro, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New pomodoro', new_pomodoro_path %>

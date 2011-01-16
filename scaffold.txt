@@ -1,0 +1,5 @@
+ruby script/generate scaffold activity id:integer priority:integer deadline:date description:text estimated_pomodoros:integer comment:text
+
+ruby script/generate scaffold pomodoro id:integer activity_id:integer start_time:timestamp end_time:timestamp interruption_type:integer
+
+ruby script/generate scaffold today_activity today:date activity_id:integer 

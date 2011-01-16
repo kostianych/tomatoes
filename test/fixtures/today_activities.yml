@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  today: 2010-01-05
+  activity_id: 1
+
+two:
+  today: 2010-01-05
+  activity_id: 2

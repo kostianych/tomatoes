@@ -1,0 +1,13 @@
+<p>
+  <b>Activity:</b>
+  <%=h @activity_inventory.activity_id %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @activity_inventory.priority %>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_inventory_path(@activity_inventory) %> |
+<%= link_to 'Back', activity_inventories_path %>
