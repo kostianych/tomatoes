@@ -1,7 +1,7 @@
 <h1>Editing today_activity</h1>
 
-<% form_for(@today_activity) do |f| %>
-  <%= f.error_messages %>
+<%= form_for(@today_activity) do |f| %>
+  <%= error_messages(@today_activity) %>
 
   <p>
     <%= f.label :today %><br />

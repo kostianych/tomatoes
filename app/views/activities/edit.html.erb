@@ -1,7 +1,7 @@
 <h1>Editing activity</h1>
 
-<% form_for(@activity) do |f| %>
-  <%= f.error_messages %>
+<%= form_for(@activity) do |f| %>
+  <%= error_messages(@activity) %>
 
   <p>
     <%= f.label :id %><br />

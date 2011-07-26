@@ -1,7 +1,7 @@
 <h1>New pomodoro</h1>
 
-<% form_for(@pomodoro) do |f| %>
-  <%= f.error_messages %>
+<%= form_for(@pomodoro) do |f| %>
+  <%= error_messages(@pomodoro) %>
 
   <p>
     <%= f.label :id %><br />

@@ -4,16 +4,18 @@
 <%= javascript_include_tag "prototype" %>
 <%= javascript_include_tag :defaults %>
 
-<% form_remote_tag :update => "table",
-                   :url => {:action => :reload}, 
-                   :html => {:id => "form"} do -%>
+<%= form_tag :update => "table",
+            :remote => true,
+            :url => {:action => :reload}, 
+            :html => {:id => "form"} do -%>
   <%= select_date Date.today, 
                   {:prefix => "start", :order => [:day,:month,:year]}, 
                   {:onchange => "form.onsubmit()"}%>
 <% end -%>
-<%= link_to_remote("Add activities",
-                   {:url => { :controller => 'today_activities', :action => 'popup' } },
-                   :title => 'Pop the status window into a popup window') -%>
+<%= link_to("Add activities",
+           {:url => { :controller => 'today_activities', :action => 'popup' } },
+            :title => 'Pop the status window into a popup window',
+            :remote => true) -%>
 
 <%= render :partial => "table", :object => @today_activities %>
 

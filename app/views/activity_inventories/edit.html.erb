@@ -1,7 +1,7 @@
 <h1>Editing activity_inventory</h1>
 
-<% form_for(@activity_inventory) do |f| %>
-  <%= f.error_messages %>
+<%= form_for(@activity_inventory) do |f| %>
+  <%= error_messages(@activity_inventory) %>
 
   <p>
     <%= f.label :activity_id %><br />

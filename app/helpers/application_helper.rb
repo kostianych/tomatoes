@@ -1,3 +1,11 @@
-# Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  
+  def error_messages(object)
+    html = ""
+    object.errors.full_messages.each do |msg|
+       html << "<li>#{msg}</li>"
+    end
+    html
+  end
+
 end
