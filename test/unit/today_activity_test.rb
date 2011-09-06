@@ -9,7 +9,7 @@ class TodayActivityTest < ActiveSupport::TestCase
       :order => "a.priority")
     i = 0
     today_activities.each do |today_activity|
-      assert "2010-01-05", today_activity.today
+      assert_equal "2010-01-05", today_activity.today.to_s(:db)
       i = i + 1
     end
     
