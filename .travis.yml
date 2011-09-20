@@ -7,5 +7,5 @@ before_script:
 
 script: "bundle exec rake test" # команда для запуска тестов
 
-after_script
+after_script:
 - "kill -9 `cat tmp/pids/server.pid`"  
