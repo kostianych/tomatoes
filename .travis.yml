@@ -1,3 +1,7 @@
 rvm:           # перечень всех версий Ruby, на которых хотите протестировать
   - 1.9.2
+before_script:
+ - "rake db:migrate"
+ - "rails server -e test"
 script: "bundle exec rake test" # команда для запуска тестов
+  
