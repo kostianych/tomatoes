@@ -6,7 +6,7 @@ before_script:
  - "rails server -d -e test"
  - "sh -e /etc/init.d/xvfb start"
 
-env: DISPLAY=:99.0"
+env: DISPLAY=:99.0
 
 script: "bundle exec rake test" # команда для запуска тестов
 
