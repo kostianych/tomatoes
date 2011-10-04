@@ -15,7 +15,7 @@ class AddActivity < Test::Unit::TestCase
   end
   
   def test_add_activity
-    @driver.get "http://0.0.0.0:3000/activities"
+    @driver.get "http://localhost:3000/activities"
     @driver.find_element(:link, "New activity").click
 
     verify_label_not_present("Id")
